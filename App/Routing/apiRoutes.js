@@ -2,6 +2,7 @@
 //============================================
 var friendsName = require("../Data/friends");
 
+console.log(friendsName);
 //Route
 //============================================
 
@@ -27,6 +28,8 @@ module.exports = function (app) {
             totalDifference = 0;
 
             console.log(currentFriend.name);
+            console.log(currentFriend.photo);
+
 
             for (var j = 0; j < currentFriend.scores.length; j++) {
                 var currentFriendScore = currentFriend.scores[j];
@@ -39,9 +42,9 @@ module.exports = function (app) {
                 bestMatch.photo = currentFriend.photo;
                 bestMatch.friendDifference = totalDifference;
             }
-
+            
         }
-        friends.push(userInfo);
+        friendsName.push(userInfo);
 
         res.json(bestMatch);
 
