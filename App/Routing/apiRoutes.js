@@ -2,7 +2,7 @@
 //============================================
 var friendsName = require("../Data/friends");
 
-console.log(friendsName);
+// console.log(friendsName);
 //Route
 //============================================
 
